@@ -1,0 +1,51 @@
+.leftBubble{
+ width: 150px;
+ height: 80px;
+ display: flex;
+ flex-direction: column;
+ color:#f9f9f9;
+ background: #3f51b5;
+ padding: 10px;
+ border-radius: 10px;
+ opacity: 0;
+
+ animation: leftBubble 7s ease-in-out;
+}
+.leftBubble > h4 {
+ margin: 0 auto;
+ font-weight: 800;
+}
+.leftBubble > p {
+ margin:10px  auto;
+ text-align: center;
+ font-weight: 600;
+}
+.leftBubble__icon{
+ position: fixed;
+ top: 10px;
+ right: 10px;
+}
+.leftBubble__triangle {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 45px solid transparent;
+	border-top: 35px solid #3f51b5;
+}
+@keyframes leftBubble {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0px);
+    opacity: 100;
+  }
+  80% {
+    transform: translateX(0px);
+    opacity: 100;
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}

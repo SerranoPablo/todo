@@ -1,0 +1,36 @@
+.done{
+ background: #00796b;
+ width: 300px;
+ height: 60px;
+ margin: 15px 0px;
+ padding: 0px;
+ color: #cfd8dc;
+ display: flex;
+ align-items: center;
+ border-radius: 10px;
+ box-shadow: 3px 3px 2px #26a69a;
+ text-transform:capitalize;
+
+  animation: slideInDown 1s ease-in-out;
+}
+.done__title{
+ margin-left: 15%;
+ margin-right: auto;
+}
+.done__icons{
+ margin: 5px;
+ margin-left: 0px;
+ display:flex;
+ flex-direction: column;
+ justify-content: flex-start;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

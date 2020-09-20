@@ -1,0 +1,38 @@
+.todo{
+ background: #607d8b;
+ width: 300px;
+ height: 60px;
+ margin: 15px 0px;
+ padding: 0px;
+ color: #cfd8dc;
+ display: flex;
+ align-items: center;
+ border-radius: 10px;
+ box-shadow: 3px 3px 2px #90a4ae;
+ text-transform:capitalize;
+
+ animation: slideIn 1s ease-in-out;
+}
+.todo__title{
+ margin-left: 15%;
+ margin-right: auto;
+}
+.todo__icons{
+ margin: 5px;
+ display:flex;
+ flex-direction: column;
+ justify-content: space-around;
+ border-left: 2px solid #cfd8dc20;
+ padding-left: 10px;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
